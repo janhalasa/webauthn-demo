@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebAuthn Demo</title>
+        <link th:href="@{/css/webauthn-demo.css}" rel="stylesheet" />
+    </head>
+    <body class="black-80">
+        <div th:replace="~{header :: header}">...</div>
+        <main>
+            <h1>Register Authentication</h1>
+            <div id="errors"></div>
+            <form class="" id="registration-form" action="/registration/user/finish" method="POST">
+                <div class="form-field">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div class="form-field">
+                    <label for="displayname">Display Name:</label>
+                    <input type="text" name="displayName" id="displayname" required>
+                </div>
+                <div class="form-field">
+                    <label for="credentialname">Credential Name:</label>
+                    <input type="text" name="credentialName" id="credentialname" required>
+                </div>
+                <div class="form-field">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </main>
+    </body>
+    <script src="javascript/base64js.min.js"></script>
+    <script src="javascript/custom.js"></script>
+    <script src="javascript/registration.js"></script>
+</html>

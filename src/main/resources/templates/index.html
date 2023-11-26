@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebAuthn Demo</title>
+        <link th:href="@{/css/webauthn-demo.css}" rel="stylesheet" />
+    </head>
+    <body class="black-80">
+        <div th:replace="~{header :: header}">...</div>
+        <main>
+            <h1>WebAuthn Demo</h1>
+
+            <h2>New User</h2>
+            <a href="/register">Register</a>
+
+            <h2>Existing Users</h2>
+            <a href="/login">Log in</a>
+        </main>
+    </body>
+</html>

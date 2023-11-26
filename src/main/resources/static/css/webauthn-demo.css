@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    text-align: right;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid silver;
+}
+
+main {
+    max-width: 30rem;
+    margin: auto;
+}
+
+label {
+    line-height: 1.5;
+    display: block;
+}
+
+input {
+    padding: 4px 8px;
+}
+
+.form-field {
+    margin-top: 1rem;
+}
+
+button[type="submit"] {
+    padding: 4px 8px;
+}
